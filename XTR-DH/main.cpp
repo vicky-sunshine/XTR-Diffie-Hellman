@@ -7,7 +7,7 @@ int main(int argc, const char * argv[]) {
   
   // Demo
   BigNumber p =  BigNumber("ED63D1E555335010A5515763B2A9D57DAD4CFE62E98A34B");
-  GFP::mod_prime = p; // set all finitie field
+  GFP::mod_prime = p; // set for all finitie field
   BigNumber g1 = BigNumber("5979DD0F29B6D5787458232E258C35C12898230E4610C58");
   BigNumber g2 = BigNumber("C328613C13A98B242CEF504BBFAAE7015C6C0F4D3BCF162");
   GFP2 Tr_g = GFP2(g1,g2);
@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
   std::cout << "Tr(g^a) :" << std::endl<< Sa[1] << std::endl << std::endl;
   
   // Bob generate key
-  std::cout << "Bob select a to generate Tr(g^b)" << std::endl;
+  std::cout << "Bob select b to generate Tr(g^b)" << std::endl;
   std::vector<GFP2> Sb = Sn(b, Tr_g);
   std::cout << "Tr(g^b) :" << std::endl<< Sb[1] << std::endl << std::endl;
   
