@@ -16,7 +16,6 @@ Please look at the [The XTR public key system](http://citeseerx.ist.psu.edu/view
 │   ├── GaloisField.hpp
 │   ├── GaloisField2.cpp # GF(P^2), pair of GF(P)
 │   └── GaloisField2.hpp
-├── README.md
 └── XTR-DH               # Sn(c) and Cn calculation
     ├── XTR.cpp
     ├── XTR.hpp
@@ -26,7 +25,7 @@ Please look at the [The XTR public key system](http://citeseerx.ist.psu.edu/view
 
 ## Example
 you can find this example in `main.cpp`.
-```
+```C++
 // My BigNumber is in hex
 BigNumber p =  BigNumber("ED63D1E555335010A5515763B2A9D57DAD4CFE62E98A34B");
 GFP::mod_prime = p; // set for all finitie field
